@@ -3,7 +3,7 @@
 # Nombre:	borratemp.sh
 # Autor:	Charlie Martínez® <cmartinez@quirinux.org>
 # Licencia:	https://www.gnu.org/licenses/gpl-3.0.txt
-# Descripción:	Libera espacio en GNU/Linux
+# Descripción:	Libera espacio en GNU/Linux. Precaución: no sólo borra temporales.
 # Versión:	2.0-estable
 
 # Limpieza final
@@ -39,9 +39,13 @@ sudo rm -rf /var/cache/apt/partial/*.deb
 sudo rm -rf /opt/tmp/*
 sudo rm -rf /.git
 
-# Eliminar toda la documentación (CUIDADO!)
+# Eliminar toda la documentación (¡CUIDADO!)
 
 sudo rm -rf /usr/share/doc/*
+
+# Eliminar las páginas de manual (¡CUIDADO!)
+
+sudo rm -rf /usr/share/man/*
 
 # Vacíar la papelera de reciclaje
 
